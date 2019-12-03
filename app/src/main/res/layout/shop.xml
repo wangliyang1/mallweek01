@@ -2,5 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/gou"
+        android:layout_gravity="center"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的购物车没有商品"
+        android:textSize="16sp"
+        android:layout_gravity="center"></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去购物"
+        android:id="@+id/button"
+        android:layout_gravity="center"></Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="推荐搭配"
+        android:textSize="30sp"
+        android:gravity="center"></TextView>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:id="@+id/gv"></GridView>
 </LinearLayout>

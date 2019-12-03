@@ -1,4 +1,4 @@
-package com.bawei.wangliyang.view;
+package com.bawei.wangliyang.view.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,12 +29,21 @@ public class MainActivity extends BaseActivity {
         HomeFragment homeFragment = new HomeFragment();
         list.add(homeFragment);
         OtherFragment otherFragment = new OtherFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("key","分类");
+        otherFragment.setArguments(bundle);
         list.add(otherFragment);
         OtherFragment otherFragment1 = new OtherFragment();
+        Bundle bundle1 = new Bundle();
+        bundle1.putString("key","发现");
+        otherFragment1.setArguments(bundle1);
         list.add(otherFragment1);
         ShopFragment shopFragment = new ShopFragment();
         list.add(shopFragment);
         OtherFragment otherFragment2 = new OtherFragment();
+        Bundle bundle2 = new Bundle();
+        bundle2.putString("key","我的");
+        otherFragment2.setArguments(bundle2);
         list.add(otherFragment2);
         pager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @NonNull
@@ -97,5 +106,8 @@ public class MainActivity extends BaseActivity {
     @Override
     protected int layoutId() {
         return R.layout.activity_main;
+    }
+    public void getHome(){
+        pager.setCurrentItem(0);
     }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivity">
+    tools:context=".view.activity.MainActivity">
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -25,7 +25,9 @@
             android:button="@null"
             android:gravity="center"
             android:textSize="20sp"
-            android:drawableTop="@drawable/shouye"
+            android:checked="true"
+            android:background="@drawable/mainselect"
+            android:drawableTop="@mipmap/ic_launcher"
             android:id="@+id/bt1"></RadioButton>
         <RadioButton
             android:layout_width="0dp"
@@ -34,8 +36,9 @@
             android:text="分类"
             android:button="@null"
             android:gravity="center"
+            android:background="@drawable/mainselect"
             android:textSize="20sp"
-            android:drawableTop="@drawable/fen"
+            android:drawableTop="@mipmap/ic_launcher"
             android:id="@+id/bt2"></RadioButton>
         <RadioButton
             android:layout_width="0dp"
@@ -44,8 +47,9 @@
             android:text="发现"
             android:button="@null"
             android:gravity="center"
+            android:background="@drawable/mainselect"
             android:textSize="20sp"
-            android:drawableTop="@drawable/fa"
+            android:drawableTop="@mipmap/ic_launcher"
             android:id="@+id/bt3"></RadioButton>
         <RadioButton
             android:layout_width="0dp"
@@ -54,18 +58,20 @@
             android:text="购物车"
             android:button="@null"
             android:gravity="center"
+            android:background="@drawable/mainselect"
             android:textSize="20sp"
-            android:drawableTop="@drawable/gou"
+            android:drawableTop="@mipmap/ic_launcher"
             android:id="@+id/bt4"></RadioButton>
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/mainselect"
             android:text="我的"
             android:button="@null"
             android:gravity="center"
             android:textSize="20sp"
-            android:drawableTop="@drawable/wo"
+            android:drawableTop="@mipmap/ic_launcher"
             android:id="@+id/bt5"></RadioButton>
     </RadioGroup>
 
